@@ -1,0 +1,5 @@
+---
+# tasks file for empty
+- name: 'Always change'
+  ansible.builtin.command: "/bin/true"
+  changed_when: true
