@@ -1,9 +1,12 @@
 name: Converge test & publish
 run-name: Checking role and publish on Ansible Galaxy
 on:
-  - schedule:
-      - cron: '@weekly'
-  - push
+  schedule:
+    - cron: '@weekly'
+  push:
+    branches:
+      - 'master'
+      - 'main'
 
 jobs:
   publish:
